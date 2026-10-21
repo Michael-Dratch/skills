@@ -1,0 +1,13 @@
+{
+  "name": "my-skills",
+  "description": "Michael Dratch's Claude Code plugins",
+  "owner": { "name": "Michael Dratch" },
+  "allowCrossMarketplaceDependenciesOn": ["claude-plugins-official"],
+  "plugins": [
+    {
+      "name": "learning-skills",
+      "source": "./plugins/learning-skills",
+      "description": "Learning-first skills that keep the developer doing the design thinking, so they keep the Theory of their system"
+    }
+  ]
+}
