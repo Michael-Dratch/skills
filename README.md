@@ -15,7 +15,7 @@ or, inside a session: `/plugin install learning-skills --marketplace Michael-Dra
 
 ### Dependency
 
-`learning-skills` needs Matt Pocock's skills, `mattpocock-skills@claude-plugins-official` (it loads his `grilling` skill). The plugin declares this in `plugin.json` `dependencies`, and the marketplace allows dependencies from `claude-plugins-official`, so installing `learning-skills` should install it too. If it does not, install it yourself:
+`learning-skills` needs Matt Pocock's skills, `mattpocock-skills@claude-plugins-official` (it loads his `grilling` and `domain-modeling` skills). The plugin declares this in `plugin.json` `dependencies`, and the marketplace allows dependencies from `claude-plugins-official`, so installing `learning-skills` should install it too. If it does not, install it yourself:
 
 ```sh
 claude plugin install mattpocock-skills@claude-plugins-official
@@ -34,6 +34,7 @@ claude --plugin-dir <path to mattpocock-skills> --plugin-dir ./plugins/learning-
 All commands are developer-invoked only; Claude never runs them on its own.
 
 - `/grill-me-answer-first <feature or plan>` (also `/learning-skills:grill-me-answer-first`): a normal `/grill-me` session, except on the questions that matter (marked 🧠) you answer first. Claude critiques your answer, then shows its recommendation, and you lock in your choice. Up to two Ripple questions check your predictions of what code depends on a decision. Ends with a Decisions block for `/to-spec`; say *save* to write it to `.scratch/<feature-slug>/decisions.md`. Say *just tell me* at any time.
+- `/grill-with-docs-answer-first <feature or plan>` (also `/learning-skills:grill-with-docs-answer-first`): the same session as `/grill-me-answer-first`, but like `/grill-with-docs` it also records ADRs and `GLOSSARY.md` terms (via Matt Pocock's `domain-modeling`) as decisions settle.
 
 ## Dogfood protocol
 
