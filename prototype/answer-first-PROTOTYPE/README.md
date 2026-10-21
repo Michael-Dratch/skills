@@ -6,5 +6,5 @@ Run in the project you want to plan a feature in:
 
     claude --plugin-dir /home/michael/Projects/my-skills/prototype/answer-first-PROTOTYPE
 
-Then: `/grill-me-answer-first <feature>` or `/grill-with-docs-answer-first <feature>`.
+Then: `/grill-me-answer-first <feature>`, `/grill-with-docs-answer-first <feature>`, or `/teach-back [feature, files, or branch]` on a finished feature.
 Requires Matt Pocock's `grilling` (and `domain-modeling` for the with-docs variant).

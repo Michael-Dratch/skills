@@ -40,6 +40,10 @@ _Avoid_: Risk, importance
 How much of an exercise the developer is asked to do: full, light, or offered a skip.
 _Avoid_: Intensity, level
 
+**Drift**:
+A disagreement between a record of a decision (ADR, spec, decisions file) and what the code now does.
+_Avoid_: Staleness, inconsistency
+
 **Decision type**:
 The kind of design call a decision is (e.g. where state lives, error handling, API shape). A tag on a decision, never an Area.
 _Avoid_: Category, decision area

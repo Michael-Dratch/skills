@@ -13,6 +13,7 @@ A buildable spec for Milestone 1: the shared core (principles, triage rubric, sh
 - Skills to consult: `grilling` + `domain-modeling` for grilling tickets; `prototype` for prototype tickets; `research` for research tickets; `writing-for-agents` whenever drafting SKILL.md text.
 - Stores nothing: Milestone 1 scores in the moment; no learner profile, Area registry, or prediction files.
 - Manual-only: every Milestone 1 skill is developer-invoked (`disable-model-invocation: true`); nothing auto-fires or piggybacks.
+- **Map complete (2026-10-21):** every ticket is closed. Next step: write the Milestone 1 spec from Decisions so far, the prototype at `prototype/answer-first-PROTOTYPE/`, and `GLOSSARY.md`.
 - Standing preference: ask the human one question at a time, not batched rounds.
 - No git repo yet: research findings go to `.scratch/milestone-1-spec/research/`, not branches.
 
@@ -26,11 +27,15 @@ A buildable spec for Milestone 1: the shared core (principles, triage rubric, sh
 - [Triage rubric](issues/06-triage-rubric.md): sets depth (full/light/offer skip) and picks targets, never whether to run; originally a 3-level stakes × novelty grid, later compressed to a short in-procedure rule with no code reading (amended); scored silently, revealed after; novelty estimated in-session (amended); silent no-alternatives gate in `design-first`; also triages each grill question for withholding
 - [How design-first fits the planning flow](issues/13-planning-flow-fit.md): `/design-first` is a grilling session with friction: up-front sketch + ripple line vs isolated subagent design, reveal with `file:line`-backed ripple check, hand-off questions, then `grilling` withholding recommendations on triaged questions; `-with-docs` twin adds `domain-modeling`; `/grill-me` untouched; requires `grilling` + `domain-modeling`; Milestone 1 persists nothing
 - [Answer-first grilling as its own skill](issues/14-answer-first-grilling.md): `grill-me-answer-first` + `grill-with-docs-answer-first` share one grill procedure: triaged questions (full open / light listed / normal), Commitment → critique → re-display → Lock-in (objection once, developer has last word), up to two Ripple questions with `file:line` checks, `🔒 Locked` lines + final Decisions block for `to-spec`; `design-first` deferred
+- [grill-me-answer-first flow](issues/15-answer-first-flow.md): prototype run on a real feature worked: triage split pick-one vs open correctly, critique and `🔒 Locked` lines liked, Ripple question strong; prototype at `prototype/answer-first-PROTOTYPE/` is the starting point; `/to-spec` hand-off, lock-against edge case and `-with-docs` still unobserved
+- [What counts as the real answer](issues/07-ground-truth.md): `teach-back` gives per-claim verdicts (✅ ◐ ❌ against code with `file:line`; rationale against ADR/spec/`decisions.md` then code; ❔ unverified); rate → explain → re-rate → verdicts with a calibration line; 🕳️ no theory routed to answer-first grill or an ADR; code wins, records that disagree flagged as ⚠️ drift; read feature code up front, ≤10 load-bearing verdicts
+- [teach-back flow](issues/11-teach-back-flow.md): prototype worked on a real feature; adopt the draft: feature from argument or branch diff, threads end at constraint / tradeoff / 🕳️, 2–3 threads × ≤4 whys, ~5 min, skip/stop escape hatch; prototype SKILL.md is the starting point
 
 ## Not yet specified
 
-- Dogfood protocol: which real project and feature, what the developer notes by hand (what helped, what annoyed, skips), when to revise.
-- README and install instructions for the plugin.
+Nothing. The last two patches were folded into the spec as defaults (developer, 2026-10-21):
+- **Dogfood protocol:** use on current projects; one-line note per session (helped / annoyed / skipped); review after about two weeks or ten sessions.
+- **README and install:** declare `mattpocock-skills` in plugin.json `dependencies` (cross-marketplace, so `marketplace.json` needs `allowCrossMarketplaceDependenciesOn`; a missing dependency disables the plugin), verified on first real install; README lists the dependency and the three commands. See `research/12-eval-dependencies.md`.
 
 ## Out of scope
 
@@ -40,5 +45,6 @@ A buildable spec for Milestone 1: the shared core (principles, triage rubric, sh
 - Cross-project Skill formation profile: secondary outcome; revisit after Milestone 1.
 - Automatic triggering of any kind (`revisit` piggybacking on other skills, hooks, model-invoked skills): Milestone 1 is manual-only, per [Milestone 1 lineup and build order](issues/05-milestone-lineup.md).
 - `design-first` and `design-first-with-docs` (up-front whole-feature sketch, isolated subagent design, hand-off block): deferred by the developer; [design-first flow](issues/10-design-first-flow.md) closed. Decisions in [How design-first fits the planning flow](issues/13-planning-flow-fit.md) remain for a later effort.
+- Evals ([Eval plan](issues/12-eval-plan.md) closed): deferred by the developer; a ~10-case regression suite is drafted in the ticket for a later effort. Until then, dogfooding is the only check on withholding when SKILL.md files are tuned.
 - Persisted scoring: learner profile, Area registry, automatic fading, calibration trends, cross-session blind-spot detection; [State schema](issues/08-state-schema.md) closed. A Milestone 2 effort if dogfooding shows the need.
 - Import-graph "map from memory" probe and its extraction scripts; hooks; multi-language support: deferred by the brief.
