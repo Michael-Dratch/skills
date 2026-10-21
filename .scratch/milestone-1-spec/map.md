@@ -13,7 +13,7 @@ A buildable spec for Milestone 1: the shared core (principles, triage rubric, sh
 - Skills to consult: `grilling` + `domain-modeling` for grilling tickets; `prototype` for prototype tickets; `research` for research tickets; `writing-for-agents` whenever drafting SKILL.md text.
 - Stores nothing: Milestone 1 scores in the moment; no learner profile, Area registry, or prediction files.
 - Manual-only: every Milestone 1 skill is developer-invoked (`disable-model-invocation: true`); nothing auto-fires or piggybacks.
-- **Map complete (2026-10-21):** every ticket is closed. Next step: write the Milestone 1 spec from Decisions so far, the prototype at `prototype/answer-first-PROTOTYPE/`, and `GLOSSARY.md`.
+- **Map complete (2026-10-21); built:** the Milestone 1 skills live in the `learning-skills` plugin at `plugins/learning-skills/` (marketplace at the repo root); build tickets in `.scratch/milestone-1-build/issues/`. The throwaway prototype referenced by closed tickets has been removed; its content was ported into the plugin.
 - Standing preference: ask the human one question at a time, not batched rounds.
 - No git repo yet: research findings go to `.scratch/milestone-1-spec/research/`, not branches.
 

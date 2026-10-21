@@ -6,6 +6,10 @@
 
 **Status:** ready-for-agent
 
-- [ ] The prototype plugin folder is deleted.
-- [ ] The wayfinder map's Notes point to the real plugin instead of the prototype.
-- [ ] No remaining reference to the prototype path in the repo (outside closed wayfinder tickets, which keep it as history).
+- [x] The prototype plugin folder is deleted.
+- [x] The wayfinder map's Notes point to the real plugin instead of the prototype.
+- [x] No remaining reference to the prototype path in the repo (outside closed wayfinder tickets, which keep it as history).
+
+## Implementation notes
+
+Remaining mentions of the prototype path are in closed tickets (wayfinder tickets, and build tickets 01–03's Sources lines) and the map's Decisions-so-far history, kept as history per the acceptance criterion.
