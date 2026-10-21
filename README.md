@@ -33,11 +33,7 @@ All commands are developer-invoked only; Claude never runs them on its own.
 - `/grill-with-docs-answer-first <feature or plan>` (also `/learning-skills:grill-with-docs-answer-first`): the same session as `/grill-me-answer-first`, but like `/grill-with-docs` it also records ADRs and `GLOSSARY.md` terms (via Matt Pocock's `domain-modeling`) as decisions settle.
 - `/teach-back [feature, files, or branch]` (also `/learning-skills:teach-back`): explain a finished feature to Claude playing a new teammate, who keeps asking *why* until each thread reaches a constraint, a tradeoff, or 🕳️ no theory. You rate your understanding (1–7) before and after; then each load-bearing claim is checked against the code, ADRs, spec and `decisions.md` (✅ ◐ ❌ ❔), with ⚠️ drift findings and your biggest gaps. Defaults to the current branch's diff. About 5 minutes; *skip* ends a thread, *stop* jumps to the reveal. Nothing is saved.
 
-## Dogfood protocol
-
-- Use the commands on current projects, where the features are real.
-- After each session, write a one-line note: helped / annoyed / skipped, plus why.
-- Review the notes after about two weeks or ten sessions, whichever comes first, and tune the skills from them.
+These skills are early and evolving; feedback is welcome.
 
 ## Layout
 
