@@ -6,7 +6,7 @@ Sources: the wayfinder map `.scratch/milestone-1-spec/map.md` (Decisions so far,
 
 **Blocked by:** None (can start immediately)
 
-**Status:** ready-for-agent
+**Status:** ready-for-human (agent work done; Human check items remain)
 
 - [x] The repo is both the marketplace and the single plugin `learning-skills` (marketplace entry with `"source": "."`), per the plugin-format research.
 - [x] The plugin declares `mattpocock-skills` as a dependency, with the cross-marketplace allowance in the marketplace manifest; if this cannot work, the README states the dependency instead and the ticket notes why.

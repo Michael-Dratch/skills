@@ -6,7 +6,7 @@ Sources: the map's tickets "What counts as the real answer" and "teach-back flow
 
 **Blocked by:** 01 (grill-me-answer-first, installable end to end)
 
-**Status:** ready-for-agent
+**Status:** ready-for-human (agent work done; Human check items remain)
 
 - [x] `teach-back` is user-invoked only and ported from the prototype: feature from the argument or the branch diff against its merge base (else ask in one line); 2–3 threads, at most four *why*s each; "about 5 minutes" stated up front; *skip* ends a thread (marked skipped), *stop* jumps to the reveal.
 - [x] Verdicts cover at most about 10 load-bearing claims; the code wins for mechanism claims; records that contradict the code produce a separate drift finding; nothing is persisted.

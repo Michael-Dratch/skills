@@ -4,7 +4,7 @@
 
 **Blocked by:** 02 (grill-with-docs-answer-first), 03 (teach-back)
 
-**Status:** ready-for-agent
+**Status:** resolved
 
 - [x] The prototype plugin folder is deleted.
 - [x] The wayfinder map's Notes point to the real plugin instead of the prototype.

@@ -6,7 +6,7 @@ Sources: as for ticket 01; mirrors `grill-me` / `grill-with-docs`.
 
 **Blocked by:** 01 (grill-me-answer-first, installable end to end)
 
-**Status:** ready-for-agent
+**Status:** ready-for-human (agent work done; Human check items remain)
 
 - [x] `grill-with-docs-answer-first` is user-invoked only, loads `grilling` and `domain-modeling`, reads the same shared grill procedure as ticket 01 (no copy of it), and says what to do if either dependency is missing.
 - [x] `claude plugin validate --strict` passes.
