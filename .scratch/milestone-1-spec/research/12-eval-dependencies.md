@@ -1,6 +1,6 @@
 # 12. Evals for skills that depend on another plugin's skills
 
-Question: our prototype skills (`prototype/answer-first-PROTOTYPE`, plugin `learning-skills-proto`) call the Skill tool for `grilling` and `domain-modeling` from `mattpocock-skills@claude-plugins-official` (1.3.1). Can `claude plugin eval` make those available?
+Question: our prototype skills (`plugins/learning-skills`, formerly the prototype `learning-skills-proto`) call the Skill tool for `grilling` and `domain-modeling` from `mattpocock-skills@claude-plugins-official` (1.3.1). Can `claude plugin eval` make those available?
 
 Checked 2026-10-21 against Claude Code 2.1.303 (`claude --version`).
 

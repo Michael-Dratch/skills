@@ -37,12 +37,28 @@ How much a decision matters: the higher of its reversibility and its blast radiu
 _Avoid_: Risk, importance
 
 **Depth**:
-How much of an exercise the developer is asked to do: full, light, or offered a skip.
+How much of an exercise the developer is asked to do: full, light, or normal (asked as usual, with Claude's recommendation).
 _Avoid_: Intensity, level
 
 **Drift**:
 A disagreement between a record of a decision (ADR, spec, decisions file) and what the code now does.
 _Avoid_: Staleness, inconsistency
+
+**Thread**:
+In a teach-back, one decision in the feature that the developer explains, followed with *why* questions until it bottoms out.
+_Avoid_: Topic, line of questioning
+
+**Bottoming out**:
+A Thread reaching a constraint, a tradeoff, or no theory, where another *why* adds nothing.
+_Avoid_: Bedrock, root cause
+
+**Load-bearing claim**:
+A claim in the developer's explanation that their account of *why* depends on; the claims checked against reality.
+_Avoid_: Key point, assertion
+
+**Calibration**:
+How well the developer's rating of their own understanding matches how many of their Load-bearing claims prove right.
+_Avoid_: Confidence, accuracy
 
 **Decision type**:
 The kind of design call a decision is (e.g. where state lives, error handling, API shape). A tag on a decision, never an Area.

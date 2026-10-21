@@ -4,14 +4,10 @@ A Claude Code marketplace (`my-skills`) holding one plugin, `learning-skills`: s
 
 ## Install
 
-Requires Claude Code 2.1.275 or later.
-
 ```sh
 claude plugin marketplace add Michael-Dratch/skills
 claude plugin install learning-skills@my-skills
 ```
-
-or, inside a session: `/plugin install learning-skills --marketplace Michael-Dratch/skills`.
 
 ### Dependency
 

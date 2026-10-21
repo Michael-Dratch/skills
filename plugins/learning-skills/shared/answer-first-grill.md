@@ -6,12 +6,12 @@ Where `grilling` says to give your recommended answer with every question, follo
 
 ## Opening
 
-Start with one line: "Answer-first grill: questions marked 🧠 are yours to answer before you see my view. Say *just tell me* at any time." Then begin the design tree.
+Start with one line: "Answer-first grill: questions marked 🧠 are yours to answer before you see my view; each takes about 2–5 minutes. Say *just tell me* at any time." Then begin the design tree.
 
 ## Per question
 
-1. **Triage, silently.** Decide the question's **depth**:
-   > Hold back when a decision is costly to undo or touches several Areas. Ask it **open** (full) when it is also new to this developer or is a one-way door; otherwise **pick one** (light). Everything else, and any question without real alternatives, is **normal**. Judge from what you already know; never read code just to triage.
+1. **Set Depth, silently**, with the Triage rubric:
+   > Hold back when a decision's **Stakes** are high: it is costly to undo or touches several Areas. Ask it **open** (full) when it is also new to this developer or is a one-way door; otherwise **pick one** (light). Everything else, and any question without real alternatives, is **normal**. Judge from what you already know; never read code just to set Depth.
 
    An **Area** is a part of the system, named the way the developer talks about it. Judge novelty from what the session shows; with nothing to go on, assume some experience. The developer's override (*open*, *pick one*, *just tell me*) always wins. Keep your judgement out of the question; it is a hint.
 2. **Ask by depth.**

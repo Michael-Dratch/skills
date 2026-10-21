@@ -8,3 +8,5 @@ argument-hint: "[feature or plan]"
 1. Call the Skill tool twice, for "grilling" and "domain-modeling". If either is not available, tell the developer this skill needs Matt Pocock's skills installed (`claude plugin install mattpocock-skills@claude-plugins-official`), and stop.
 2. Read `${CLAUDE_PLUGIN_ROOT}/shared/answer-first-grill.md`. Where it differs from `grilling`, it wins.
 3. Run the answer-first grill on: $ARGUMENTS
+
+Research basis: the generation effect and productive failure.
